@@ -10,5 +10,9 @@ public class Main {
         train.isAllowed(matt);
 
         System.out.println(train);
+
+        train.removeEveryoneRiding();
+
+        System.out.println(train);
     }
 }

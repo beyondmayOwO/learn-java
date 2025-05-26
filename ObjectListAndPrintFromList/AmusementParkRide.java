@@ -38,6 +38,11 @@ public class AmusementParkRide {
         return onTheRide;
     }
 
+    // clear list method removes everything from the list
+    public void removeEveryoneRiding() {
+        this.riding.clear();
+    }
+
     @Override
     public String toString() {
         return this.name + ", minimum height requirement: " + this.minHeight + ", visitors: " + this.visitors + "\n" + "Riding:\n " + allRiding();
