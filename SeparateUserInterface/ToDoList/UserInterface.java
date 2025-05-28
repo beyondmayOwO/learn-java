@@ -1,4 +1,4 @@
-package SeparateUserInterface;
+package SeparateUserInterface.ToDoList;
 
 import java.util.Scanner;
 
