@@ -40,3 +40,18 @@ public class CalculatorTest {
     // assertTrue (boolean) | Eg. assertTrue(management.exerciseList().contains("Write a test"));
     // assertFalse (boolean) | Eg. assertFalse(management.isCompleted("Some exercise"));
 }
+
+
+// How to use Maven
+// - Search for "Maven in 5 minutes"
+// - Follow the instructions
+
+// In General
+// - Install Maven for the operating system
+// - Go to the parent directory of the project directory
+// - Create a project
+// - mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.5 -DinteractiveMode=false
+// - Then 'cd' into the project
+// - Go to the test file
+// - Add the tests
+// - mvn test
