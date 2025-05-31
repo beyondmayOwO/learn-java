@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: may.com.CalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.091 s <<< FAILURE! -- in may.com.CalculatorTest
+may.com.CalculatorTest.valueMinusTwoWhenTwoSubstracted -- Time elapsed: 0.035 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "may.com.Calculator.subtract(int)" because "this.calculator" is null
+	at may.com.CalculatorTest.valueMinusTwoWhenTwoSubstracted(CalculatorTest.java:34)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+may.com.CalculatorTest.valueFiveWhenFiveAdded -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "may.com.Calculator.add(int)" because "this.calculator" is null
+	at may.com.CalculatorTest.valueFiveWhenFiveAdded(CalculatorTest.java:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+may.com.CalculatorTest.calculatorInitialValueZero -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "may.com.Calculator.getValue()" because "this.calculator" is null
+	at may.com.CalculatorTest.calculatorInitialValueZero(CalculatorTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
