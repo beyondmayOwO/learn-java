@@ -1,19 +1,25 @@
 package Algorithms.Search.LinearSearch;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
         ArrayList<Book> books = new ArrayList<>();
 
-        books.add(new Book(1, "The Hobbit"));
-        books.add(new Book(2, "1984"));
-        books.add(new Book(3, "Brave New World"));
-        books.add(new Book(4, "To Kill a Mockingbird"));
-        books.add(new Book(5, "The Great Gatsby"));
+        books.add(new Book(5, "The Hobbit"));
+        books.add(new Book(4, "1984"));
+        books.add(new Book(1, "Brave New World"));
+        books.add(new Book(2, "To Kill a Mockingbird"));
+        books.add(new Book(3, "The Great Gatsby"));
 
-        int index = linearSearch(books, 2);
-        System.out.println("book found at " + index);
+        // int index = linearSearch(books, 2);
+        // System.out.println("book found at " + index);
+
+        System.out.println(books);
+
+        Collections.sort(books);
+        System.out.println(books);
     }
 
     // LINEAR SEARCH
@@ -32,4 +38,14 @@ public class Main {
 
         return -1;
     }
+
+    // BINARY SEARCH (HALF-INTERVAL SEARCH)
+    // List or Array must be sorted first
+    // Then search from the middle index first.
+    // If the value of the middle index is bigger than the searched, eliminate the right half. The left half if the value is smaller
+    // Then continue the process for the remaining values
+    // If the value is equals to the searched, return the index of that value
+    // If not index -1 is returned
+
+    // We haven't learned how to sort the objects yet so the code for the binary search is unfinished.
 }
