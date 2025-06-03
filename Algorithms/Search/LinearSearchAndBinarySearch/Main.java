@@ -1,4 +1,4 @@
-package Algorithms.Search.LinearSearch;
+package Algorithms.Search.LinearSearchAndBinarySearch;
 
 import java.util.ArrayList;
 import java.util.Collections;

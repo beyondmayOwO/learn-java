@@ -1,4 +1,4 @@
-package Algorithms.Search.LinearSearch;
+package Algorithms.Search.LinearSearchAndBinarySearch;
 
 public class Book {
     private int id;
