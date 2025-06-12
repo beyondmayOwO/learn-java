@@ -33,8 +33,7 @@ public class VehicleDemo {
         anotherVehicle.accelerate(); // Still calls Car's accelerate method
         anotherVehicle.brake();
 
-        // You cannot call openTrunk() directly on anotherVehicle because it's
-        // declared as a Vehicle type, even though it's a Car object at runtime.
+        // You cannot call openTrunk() directly on anotherVehicle because it's only for Car object type and we declarded Vehicle type here
         // To call openTrunk(), you'd need to cast it: ((Car)anotherVehicle).openTrunk();
 
         System.out.println("\n");
