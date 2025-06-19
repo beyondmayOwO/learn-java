@@ -17,23 +17,43 @@ public class Main {
 
         // Calculate the average birth year of authors
         double averageAuthorBirthYear = books.stream()
+
+            // Transform stream of Books to stream of Persons (authors)
             .map(book -> book.getAuthor())
+
+            // Transform stream of Persons to stream of Integers (birth years)
             .mapToInt(author -> author.getBirthYear())
+
+            // Calculate the average
             .average()
+
+            // Get the double value
             .getAsDouble();
 
         System.out.println("Average author birth year: " + averageAuthorBirthYear);
 
         // Print authors of books containing "Potter" in their title
         books.stream()
+
+            // Keep only books with "Potter" in title
             .filter(book -> book.getName().contains("Potter"))
+
+            // Get the author object for each remaining book
             .map(book -> book.getAuthor())
+
+            // Print the author's name
             .forEach(author -> System.out.println(author.getName()));
         
         // Print "Author Name: Book Title" pairs, sorted alphabetically
         books.stream()
+
+            // Transform to a "Author: Book" string
             .map(book -> book.getAuthor().getName() + ": " + book.getName())
+
+            // Sort these strings alphabetically
             .sorted()
+
+            // Print each string
             .forEach(System.out::println);
     }
 }
