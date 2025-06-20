@@ -20,6 +20,18 @@ public class SimpleStreamExample {
             .map(value -> value * 2)
             .collect(Collectors.toCollection(ArrayList::new));
 
+        // // Reduce: Combine stream elements to some other form
+        // ArrayList<Integer> values = new ArrayList<>();
+        // values.add(7);
+        // values.add(3);
+        // values.add(2);
+        // values.add(1);
+
+        // // Format: reduce(*initialState*, (*previous*, *object*) -> *actions on the object*)
+        // int sum = values.stream()
+        //     .reduce(0, (previousSum, value) -> previousSum + value);
+        // System.out.println(sum);
+
         System.out.println("Processsed List: " + processedNumbers);
     }
 }
