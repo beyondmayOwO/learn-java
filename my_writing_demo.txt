@@ -1,0 +1,4 @@
+Hello file!
+More text on the new line!
+This text stays on the same line.
+This is a new line after a manual line break.
